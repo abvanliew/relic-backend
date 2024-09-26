@@ -1,0 +1,62 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nocodb
+spec:
+  volumes:
+  - name: nocodb-storage
+    hostPath:
+      path: /mnt/c/Users/abvan/Documents/GitHub/relic-backend/data/nocodb
+      type: Directory
+  containers:
+  - name: nocodb
+    image: nocodb/nocodb
+    tag: latest
+    volumeMounts:
+    - name: nocodb-storage
+      mountPath: /usr/app/data/
+    ports:
+    - containerPort: 8080
+      hostPort: 8080
+    env:
+    - name: NC_ADMIN_EMAIL
+      valueFrom:
+        secretKeyRef:
+          name: relic-secrets
+          key: NC_ADMIN_EMAIL
+    - name: NC_ADMIN_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: relic-secrets
+          key: NC_ADMIN_PASSWORD
+    resources:
+      limits:
+        cpu: 1
+        memory: 512Mi
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+spec:
+  volumes:
+  - name: mongo-storage
+    hostPath:
+      path: /mnt/c/Users/abvan/Documents/GitHub/relic-backend/data/mongo
+      type: Directory
+  containers:
+  - name: db
+    image: mongo
+    tag: latest
+    volumeMounts:
+    - name: mongo-storage
+      mountPath: /data/test
+    ports:
+    - containerPort: 27017
+      hostPort: 27017
+    resources:
+      limits:
+        cpu: 1
+        memory: 512Mi

@@ -1,0 +1,98 @@
+[
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee0"
+    },
+    "flow": "Innate",
+    "die": "d6",
+    "title": "Anointment"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee1"
+    },
+    "flow": "Innate",
+    "die": "d8",
+    "title": "Animalism"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee2"
+    },
+    "flow": "Innate",
+    "die": "d12",
+    "title": "Rage"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee3"
+    },
+    "flow": "Innate",
+    "die": "d10",
+    "title": "Sanguine"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee4"
+    },
+    "flow": "Resonance",
+    "die": "d8",
+    "title": "Channel"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee5"
+    },
+    "flow": "Resonance",
+    "die": "d10",
+    "title": "Virtuoso"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee6"
+    },
+    "flow": "Resonance",
+    "die": "d6",
+    "title": "Mastery"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee7"
+    },
+    "flow": "Resonance",
+    "die": "d8",
+    "title": "Ki"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee8"
+    },
+    "flow": "Magic",
+    "die": "d10",
+    "title": "Mana (Minor)"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421ee9"
+    },
+    "flow": "Magic",
+    "die": "d10",
+    "title": "Mana (Moderate)"
+  },
+  {
+    "_id": {
+      "$oid": "66f44d8c7e098103fc421eea"
+    },
+    "flow": "Magic",
+    "die": "d10",
+    "title": "Mana (Major)"
+  },
+  {
+    "_id": {
+      "$oid": "66f4e4c47e098103fc422236"
+    },
+    "title": "Mana",
+    "die": "d10",
+    "flow": "Magic"
+  }
+]

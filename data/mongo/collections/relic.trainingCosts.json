@@ -1,0 +1,44 @@
+[
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a43"
+    },
+    "title": "Inherient",
+    "order": 0
+  },
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a44"
+    },
+    "title": "Full",
+    "order": 2
+  },
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a45"
+    },
+    "title": "Half",
+    "order": 3
+  },
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a46"
+    },
+    "title": "Keystone",
+    "order": 1
+  },
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a47"
+    },
+    "title": "Cantrip",
+    "order": 4
+  },
+  {
+    "_id": {
+      "$oid": "66f1eba07e098103fc421a48"
+    },
+    "title": "Spell",
+    "order": 5
+  }
+]

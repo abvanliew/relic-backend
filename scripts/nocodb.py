@@ -1,4 +1,4 @@
-from requests import Session
+from requests import Session # type: ignore
 
 class Nocodb():
   def __init__(

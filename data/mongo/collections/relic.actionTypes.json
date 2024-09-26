@@ -1,0 +1,56 @@
+[
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a5d"
+    },
+    "title": "Boon"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a5e"
+    },
+    "title": "Action"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a5f"
+    },
+    "title": "Interaction"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a60"
+    },
+    "title": "Reaction"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a61"
+    },
+    "title": "Reflex"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a62"
+    },
+    "title": "Trigger"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a63"
+    },
+    "title": "Complex Action"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a64"
+    },
+    "title": "Extended Action"
+  },
+  {
+    "_id": {
+      "$oid": "66f319c27e098103fc421a65"
+    },
+    "title": "Free Action"
+  }
+]

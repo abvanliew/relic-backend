@@ -12,10 +12,6 @@ spec:
   containers:
   - name: db
     image: mongo:latest
-    # lifecycle:
-    #   preStop:
-    #     exec:
-    #       command: ["touch","/data/backup/z"]
     volumeMounts:
     - name: mongo-storage
       mountPath: /data/backup

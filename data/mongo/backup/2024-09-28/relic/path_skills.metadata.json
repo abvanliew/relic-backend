@@ -1,0 +1,1 @@
+{"options":{"viewOn":"paths","pipeline":[{"$lookup":{"from":"skills_joined","localField":"skillIds","foreignField":"_id","as":"skills"}},{"$unset":"skillIds"}]},"indexes":[],"collectionName":"path_skills","type":"view"}

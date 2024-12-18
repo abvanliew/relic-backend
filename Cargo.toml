@@ -4,10 +4,18 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = "0.7.7"
 bson = { version = "2.13.0", features = ["chrono-0_4"] }
 chrono = "0.4.38"
+dioxus = { version = "0.5.6", features = ["router", "web"] }
+dioxus-logger = "0.5.1"
+dioxus-ssr = "0.5.6"
 futures = "0.3.30"
+getrandom = { version = "0.2.15", features = ["js"] }
 mongodb = "3.1.0"
 serde = { version = "1.0.210", features = ["derive"] }
 serde_json = "1.0.128"
-tokio = "1.40.0"
+tokio = { version = "1.40.0", features = ["full"] }
+
+[features]
+default = []

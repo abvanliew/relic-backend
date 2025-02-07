@@ -11,7 +11,7 @@ spec:
       type: Directory
   containers:
   - name: db
-    image: mongo:latest
+    image: mongo:8
     volumeMounts:
     - name: mongo-storage
       mountPath: /data/backup

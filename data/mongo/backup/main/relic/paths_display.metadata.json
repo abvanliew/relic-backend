@@ -1,0 +1,1 @@
+{"options":{"viewOn":"paths","pipeline":[{"$match":{"state":"Display"}},{"$unset":"state"},{"$sort":{"tier":{"$numberInt":"1"},"order.catagory":{"$numberInt":"1"}}}]},"indexes":[],"collectionName":"paths_display","type":"view"}

@@ -24,4 +24,5 @@ podman exec mongo-db bash -c 'mongorestore --db relic /data/backup/main/relic'
 podman exec mongo-db bash -c 'mongorestore --drop --db relic /data/backup/main/relic'
 
 
- --mode upsert
+mongoexport -d relic -c skills -o /data/backup/skills.json
+mongoimport --db=relic --collection=skills --file=/data/backup/upsert.json --mode upsert

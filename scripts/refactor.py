@@ -20,7 +20,7 @@ def refactor(skills: list[dict]):
   for skill in skills:
     new_skill = refactor_skill(skill)
     if new_skill != skill:
-      refactored_skills.append(refactor_skill(skill))
+      refactored_skills.append(new_skill)
   return refactored_skills
 
 def refactor_skill(skill:dict):
@@ -59,7 +59,7 @@ def group_rules_block(elements: list[dict]):
         current_set = []
       refactored.append( element )
   if len(current_set) > 0:
-    refactored.extend({"block": current_set})
+    refactored.append({"block": current_set})
   return refactored
 
 def overlap(left: list, right: list)->bool:
@@ -70,5 +70,6 @@ def overlap(left: list, right: list)->bool:
   return False
 
 skills=load_json_objects("./data/mongo/backup/skills.json")
+# skills=load_json_objects("./hurl.json")
 refactors = refactor(skills)
-write_json_objects("test.json",refactors)
+write_json_objects("upsert.json",refactors)

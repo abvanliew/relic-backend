@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "66f45f6b7e098103fc4220a5"
+  },
+  "summary": "Make a Physique vs Tenacity attack to push a creature prone or back a space.",
+  "tier": "Initiate",
+  "action": {
+    "class": "Action",
+    "keywords": "Martial, Forced Movement",
+    "target": {
+      "class": "Touch",
+      "selection": "Creature"
+    },
+    "rules": [
+      {
+        "block": [
+          {
+            "roll": {
+              "class": "Attack",
+              "capability": "Physique",
+              "defense": "Tenacity"
+            }
+          }
+        ]
+      },
+      {
+        "outcomes": [
+          {
+            "result": "Hit",
+            "rules": [
+              {
+                "block": [
+                  {
+                    "class": "Text",
+                    "text": "Choose to either push target 1 space or knock target prone."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "result": "Critical",
+            "rules": [
+              {
+                "block": [
+                  {
+                    "class": "Text",
+                    "text": "You can choose to do both or push the target 2 spaces."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "title": "Push",
+  "order": {
+    "category": -1
+  },
+  "trainingCost": "Inherient",
+  "state": "Display"
+}

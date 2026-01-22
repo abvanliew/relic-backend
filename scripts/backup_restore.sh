@@ -16,7 +16,7 @@ mongorestore --db relic /data/backup/`date +"%Y-%m-%d"`/relic
 # quick exec commands
 # podman exec mongo-db bash -c 'mongodump --db relic --out /data/backup/`date +"%Y-%m-%d"` && echo `date +"%Y-%m-%d"`'
 podman exec mongo-db bash -c 'mongodump --db relic --out /data/backup/main'
-podman exec mongo-db bash -c 'mongoexport -d relic -c skills -o /data/backup/skills.json'
+podman exec mongo-db bash -c 'mongoexport -d relic -c skills -o /data/backup/skills.jsonl'
 
 # podman exec mongo-db bash -c 'mongorestore --db relic /data/backup/`date +"%Y-%m-%d"`/relic' 
 # podman exec mongo-db bash -c 'mongorestore --db relic /data/backup/2024-12-18/relic'
